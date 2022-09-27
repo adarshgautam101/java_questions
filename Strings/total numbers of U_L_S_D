@@ -1,0 +1,38 @@
+/* TOTAL NUMBER OF APLHBET AND UPPER LOWER AS WELL DIGIT*/
+package strings.java;
+import java.util.*;
+public class Totalalphabet {
+
+	public static void main(String[] args) {
+		int count=0;
+		int count2=0;
+		int count3=0;
+		int count4=0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the string");
+		String str;
+		str=sc.nextLine();
+		char ch[]=str.toCharArray();
+		for(int i=0;i<ch.length;i++)
+		{
+			if(ch[i]>='a' && ch[i]<='z')
+			{
+				count++;
+			}
+			else if(ch[i]>='A' && ch[i]<='Z')
+			{
+				count2++;
+			}
+			else if(ch[i]>='0' && ch[i]<='9') {
+				count3++;
+		}
+			else
+				count4++;
+		}
+		System.out.println("lower letter alphabets are "+count);
+		System.out.println("upper letter alphabets are "+count2);
+		System.out.println("digits are "+count3);
+		System.out.println("special charters are "+count4);
+	}
+
+}
