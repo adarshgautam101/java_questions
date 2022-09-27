@@ -1,0 +1,22 @@
+package strings.java;
+import java.util.*;
+public class Removevowels {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		String str;
+		System.out.println("enter the string to remove");
+		str=sc.nextLine();
+		char ch[]=str.toCharArray();
+		for(int i=0;i<ch.length;i++)
+		{
+			if(ch[i]=='a' || ch[i]=='A' || ch[i]=='e' || ch[i]=='E' || ch[i]=='i' || ch[i]=='I'|| ch[i]=='o'||ch[i]=='O'||ch[i]=='U'||ch[i]=='u')
+			{
+			continue;	
+			}
+			else
+				System.out.print(ch[i]);
+		}
+	}
+
+}
