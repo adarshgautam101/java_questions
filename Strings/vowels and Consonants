@@ -1,0 +1,29 @@
+package strings.java;
+import java.util.*;
+public class vowelss {
+
+	public static void main(String[] args) {
+     Scanner sc= new Scanner(System.in);
+     String vs;
+     System.out.println("enter the string for the vowel");  /*printf*/
+     vs=sc.nextLine();
+     int count=0;
+     int count2=0;
+     char ch[]=vs.toCharArray();
+     for(int i=0;i<ch.length;i++)
+     {
+    	 if(ch[i]=='a' || ch[i]=='A' || ch[i]=='e' || ch[i]=='E' || ch[i]=='i' || ch[i]=='I'|| ch[i]=='o'||ch[i]=='O'||ch[i]=='U'||ch[i]=='u')
+    
+     {
+    		 count++;
+    		 
+     }
+    	 else
+    		 count2++;
+     }
+     System.out.println(count);
+     System.out.println(count2);
+
+	}
+
+}
