@@ -1,0 +1,22 @@
+package strings.java;
+import java.util.*;
+public class braces {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the string");
+	    String s=sc.nextLine();
+	    char ch[]=s.toCharArray();
+	    for(int i=0;i<ch.length;i++)
+	    {
+	        if(ch[i] == '{'||ch[i] == ')'||ch[i]=='(' || ch[i]=='}')
+	        {
+	           continue;
+	        }
+	        else
+	        System.out.print(ch[i]);
+	    }
+	}
+
+}
