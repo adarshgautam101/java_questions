@@ -1,0 +1,15 @@
+public class Main{
+    public static void main(String[]args)
+    {
+        String sb="Adarshgautam";
+        String sb2="";
+        for(int i=0;i<sb.length();i++)
+        {
+            sb2+=sb.charAt(i);
+        }
+        for(int i=0;i<sb2.length();i++)
+        {
+            System.out.print(sb2.charAt(i)+"");
+        }
+    }
+}
