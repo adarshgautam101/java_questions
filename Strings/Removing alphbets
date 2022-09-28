@@ -1,0 +1,21 @@
+package strings.java;
+import java.util.*;
+public class except_alphbets {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enter th string");
+	String s=sc.next();
+	char ch[]=s.toCharArray();
+	for(int i=0;i<ch.length;i++)
+	{
+		if((ch[i]>='a'&& ch[i]<='z')||(ch[i]>='A' && ch[i]<='Z'))
+		{
+			System.out.print(ch[i]);
+		}
+		else
+			continue;
+	}
+	}
+
+}
