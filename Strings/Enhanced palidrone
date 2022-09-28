@@ -1,0 +1,31 @@
+package strings.java;
+import java.util.*;
+public class Palidrone {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		String str;
+		System.out.println("enter the string");
+        str=sc.next();
+        int l=str.length();
+        char ch[]=str.toCharArray();
+        int count=0;
+        for(int i=0;i<l/2;i++)
+        {
+        	if(ch[i]!=ch[l-1-i])
+        	{
+        	break;
+        	}
+        	
+        }
+        if(count==0)
+        {
+        	System.out.println("you have entered palidrone string");
+        }
+        else
+        {
+        	System.out.println("You have not entered palidrone string");
+        }
+	}
+
+}
