@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+   System.out.println("enter the string ");
+   String s1=sc.nextLine();
+   System.out.println("enter the string to be replaced");
+   String s2=sc.nextLine();
+   System.out.println("enter the stringto be entered");
+   String s3=sc.nextLine();
+   String finals=s1.replace(s2,s3);
+   System.out.println(finals);
+	}
+}
