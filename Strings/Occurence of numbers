@@ -1,4 +1,3 @@
-package strings.java;
 import java.util.*;
 public class occurenceinstring {
 
