@@ -1,0 +1,30 @@
+package strings.java;
+import java.util.*;
+public class occurenceinstring {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+    System.out.println("enter string");
+		String s=sc.nextLine();
+		char ch[]=s.toCharArray();
+		int count=1;
+		Arrays.sort(ch);
+		int c;
+		for(int i=0;i<ch.length;i=i+c)
+		{
+			count=1;
+			for(int j=1+i;j<ch.length;j++)
+			{
+				if(i==j)
+				{
+					j++;
+				}
+				else if(ch[j]==ch[i]) {
+				count++;}
+			}
+            System.out.println(ch[i]+" occurence is "+count);
+             c=count;
+		}
+	}
+
+}
