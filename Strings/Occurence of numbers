@@ -15,12 +15,9 @@ public class occurenceinstring {
 			count=1;
 			for(int j=1+i;j<ch.length;j++)
 			{
-				if(i==j)
-				{
-					j++;
+				if(ch[j]==ch[i]) {
+				count++;
 				}
-				else if(ch[j]==ch[i]) {
-				count++;}
 			}
             System.out.println(ch[i]+" occurence is "+count);
              c=count;
