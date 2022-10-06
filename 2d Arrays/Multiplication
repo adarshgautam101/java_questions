@@ -1,0 +1,43 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+     int arr[][]= new int[2][2];
+     int brr[][]=new int [2][2];
+     int crr[][]= new int[2][2];
+     Scanner sc = new Scanner(System.in);
+     System.out.println("enter the first matrix");
+     for(int i=0;i<arr.length;i++)
+     {
+         for(int j=0;j<arr.length;j++)
+         {
+             arr[i][j]=sc.nextInt();
+         }
+     }
+     System.out.println("enter the second matrix");
+     for(int i=0;i<brr.length;i++ )
+     {
+         for(int j=0;j<brr.length;j++)
+         {
+             brr[i][j]=sc.nextInt();
+         }
+     }
+     
+     System.out.println();
+     for(int i=0;i<crr.length;i++)
+     {
+         for(int j=0;j<crr.length;j++)
+         {
+             crr[i][j]=arr[i][0]*brr[0][j]+arr[i][1]*brr[1][j];
+         }
+     }
+     for(int i=0;i<crr.length;i++)
+     {
+         for(int j=0;j<crr.length;j++)
+         {
+             System.out.print(crr[i][j]+" ");
+         }
+         System.out.println();
+     }
+	}
+}
