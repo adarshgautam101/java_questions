@@ -1,0 +1,60 @@
+package strings.java;
+/*two array one is ascending order another one is desending order and their sum*/
+import java.util.*;
+
+
+public class productoftwoarrayinascdes {
+
+	public static void main(String[] args) {
+         int product=0;
+		System.out.println("enter the size of array");
+		Scanner sc= new Scanner(System.in);
+		int size=sc.nextInt();
+		int []arr=new int [size];
+		int brr[]=new int[size];
+		System.out.println("enter the first array");
+		for(int i=0;i<arr.length;i++)
+		{
+			arr[i]=sc.nextInt();
+		}
+		System.out.println("enter the second array");
+		for(int i=0;i<brr.length;i++)
+		{
+			brr[i]=sc.nextInt();
+	    }
+		for(int i=0;i<arr.length;i++)
+		{
+			for(int j=i+1;j<arr.length;j++)
+			{
+				if(arr[i]>arr[j])
+				{
+					int temp=arr[i];
+					arr[i]=arr[j];
+					arr[j]=temp;
+				}
+			}
+		}
+		for(int i=0;i<brr.length;i++)
+		{
+			for(int j=i+1;j<brr.length;j++)
+			{
+				if(brr[i]<brr[j])
+				{
+					int temp=brr[i];
+					brr[i]=brr[j];
+					brr[j]=temp;
+				}
+			}
+		}
+		for(int i=0;i<arr.length;i++)
+		{
+			product+=arr[i]*brr[i];
+			
+		}
+		System.out.println(product);
+		
+		
+		     
+	}
+
+}
