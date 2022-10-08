@@ -1,0 +1,40 @@
+package strings;
+import java.util.*;
+public class transpose_2d {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the size of the row and column");
+		System.out.println("code is only for n*n");
+		int rows=sc.nextInt();
+		int column=sc.nextInt();
+		int [][]arr=new int[rows][column];
+		int [][]crr= new int [rows][column];
+		System.out.println("enter the matrix");
+		for(int i=0;i<arr.length;i++)
+		{
+			for(int j=0;j<arr.length;j++)
+			{
+				arr[i][j]=sc.nextInt();
+			}
+		}
+		for(int i=0;i<crr.length;i++)
+		{
+			for(int j=0;j<crr.length;j++)
+			{
+				crr[i][j]=arr[j][i];
+			}
+		}
+		for(int i=0;i<crr.length;i++)
+		{
+			for(int j=0;j<crr.length;j++)
+			{
+				System.out.print(crr[i][j]+" ");
+			}
+			System.out.println();
+		}
+		
+		
+	}
+
+}
