@@ -1,0 +1,29 @@
+package strings.java;
+import java.util.*;
+public class evenodd_count {
+
+	public static void main(String[] args) {
+		System.out.println("enter the size of the array");
+		int count1=0;
+		int count2=0;
+		Scanner sc= new Scanner(System.in);
+		int size=sc.nextInt();
+		int []arr= new int[size];
+		for(int i=0;i<arr.length;i++)
+			{
+			arr[i]=sc.nextInt();
+		}
+		for(int i=0;i<arr.length;i++)
+		{
+			if(arr[i]%2==0)
+			{
+				count1++;
+			}
+			else
+			count2++;
+	}
+		
+       System.out.println("number of even number in array is = " +count1);
+       System.out.println("number of odd number in array is = "+count2);
+}
+}
