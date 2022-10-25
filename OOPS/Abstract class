@@ -1,0 +1,26 @@
+public class Main
+{
+	public static void main(String[] args) {
+	  Horse hr= new Horse();
+	  hr.eat();
+	  hr.walk();
+	}
+}
+abstract class Animal{
+    void eat()
+    {
+        System.out.println("animal eats");
+    }
+    abstract void walk();
+}
+class Horse extends Animal{
+    void walk()
+    {
+        System.out.println("walks on four legs");
+    }
+}
+class Chicken extends Animal{
+    void walk(){
+        System.out.println("chicken walks on 2 legs");
+    }
+}
