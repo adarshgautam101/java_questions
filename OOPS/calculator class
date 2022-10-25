@@ -1,0 +1,65 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+    int choose;
+    Scanner sc = new Scanner(System.in);
+    Complex ne= new Complex();
+	System.out.println("enter what you will do");
+	System.out.println("1.Add");
+	System.out.println("2.difference");
+	System.out.println("3.product");
+	choose =sc.nextInt();
+	switch(choose){
+	    case 1:
+	        System.out.println("enter the first number for addition");
+	        int a=sc.nextInt();
+	        System.out.println("enter the second number for addition");
+	        int b=sc.nextInt();
+	        int c=ne.sum(a,b);
+	        System.out.println("addition is "+c);
+	        break;
+	    case 2:
+	         System.out.println("enter the first number for difference");
+	        int e=sc.nextInt();
+	        System.out.println("enter the second number for difference");
+	        int f=sc.nextInt();
+	        int g=ne.diff(e,f);
+	        System.out.println("difference is "+g);
+	        break;
+	    case 3:
+	         System.out.println("enter the first number for product");
+	        int x=sc.nextInt();
+	        System.out.println("enter the second number for product");
+	        int y=sc.nextInt();
+	        int z=ne.pro(x,y);
+	        System.out.println("your product is"+z);
+	        
+	        default:
+	        System.out.println("you have choosed wrong input");
+	        break;
+	    
+	}
+	}
+}
+class Complex{
+  static  int  sum(int a,int b)
+  {
+      return a+b;
+  }
+ static  int diff(int c,int d)
+  {
+      return c-d;
+  }
+  static int pro(int d,int e)
+  {
+      return d*e;
+  }
+}
