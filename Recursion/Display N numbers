@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	int number=sc.nextInt();
+	display(number);
+	
+	}
+	static void display(int n)
+	{
+	    if(n>=1)
+	    {
+	        display(n-1);
+	        System.out.println(n);
+	    }
+
+	}
+}
