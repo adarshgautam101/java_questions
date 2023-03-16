@@ -1,0 +1,19 @@
+import java.util.*;
+public class Factor1 {
+    public static void main(String[] args) {
+        long n;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter no");
+        n = sc.nextLong();
+        long f = Factor1.fact(n);
+        System.out.println("factorial" + f);
+
+    }
+
+    static long fact(long n) {
+        if (n <= 0)
+            return 1;
+        return Factor1.fact(n - 1) * n;
+
+    }
+}
