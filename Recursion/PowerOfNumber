@@ -1,0 +1,17 @@
+package Recursion;
+
+public class Prep1 {
+    public static void main(String[] args) {
+        System.out.println(Prep1.printPowerOfNumber(2,3));
+    }
+    public static int printPowerOfNumber(int number,int base){
+        if(base==0){
+            return 0;
+        }
+
+        int sum=1;
+       sum=sum*number;
+        printPowerOfNumber(sum,base-1);
+        return sum;
+    }
+}
